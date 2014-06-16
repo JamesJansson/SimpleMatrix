@@ -9,6 +9,10 @@
 
 // *** This library will likely require c++11 setting turned on in your compiler. ***
 
+
+#ifndef SIMPLEMATRIXFLAG ///used to prevent this header from being comiled multiple times
+#define SIMPLEMATRIXFLAG
+
 #include <vector>
 using namespace std;
 
@@ -611,7 +615,7 @@ SimpleMatrix<TemplateType> yjoin(SimpleMatrix<TemplateType> A, SimpleMatrix<Temp
     return ReturnMatrix;
 }
 
-
+#endif
 
 
 /*
